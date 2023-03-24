@@ -20,7 +20,7 @@ function toaster() {
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
 		var img = document.createElement("img");
-		img.src = xhr.response;
+		img.src = "https://webappimages.blob.core.windows.net/images/toaster1.jpg";
 		img.width = "100";
 		img.height = "100";
 		
@@ -29,7 +29,7 @@ function toaster() {
     }
   }
 		
-  var reqlink = 'https://case7functions.azurewebsites.net/api/GetImages?code=SARQEJuycf7ALUKEA6ICm8kJW1zexYePbXiUcx_sodpyAzFuSZC7vg=='
+  var reqlink = 'https://case7functions.azurewebsites.net/api/HttpTrigger1?code=dri0Qshw5Je1DQwvyeo-zgC0NTZyXsCaW7PtcadIBgiaAzFuJ3rItQ=='
 		
   xhr.open('get', reqlink, true);
   xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
