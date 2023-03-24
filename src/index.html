@@ -23,14 +23,14 @@
                 alert(xhr.response);
             }
         }
-        xhr.open('get', 'https://case7functions.azurewebsites.net/api/HttpTrigger1?code=dri0Qshw5Je1DQwvyeo-zgC0NTZyXsCaW7PtcadIBgiaAzFuJ3rItQ==', true);
+		
+		var reqlink = 'https://case7functions.azurewebsites.net/api/HttpTrigger1?code=dri0Qshw5Je1DQwvyeo-zgC0NTZyXsCaW7PtcadIBgiaAzFuJ3rItQ==&name='
+		
+        xhr.open('get', reqlink+"test", true);
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
       
-        var body = {
-          "name": "Test" 
-        }
-      
-        xhr.send(JSON.stringify(body));
+        xhr.send();
     }
 
 </script>
