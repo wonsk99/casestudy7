@@ -7,8 +7,9 @@ function testlink() {
   }
 		
   var reqlink = 'https://case7functions.azurewebsites.net/api/HttpTrigger1?code=dri0Qshw5Je1DQwvyeo-zgC0NTZyXsCaW7PtcadIBgiaAzFuJ3rItQ==&name='
+  var test = document.getElementById("testinput").value;
 		
-  xhr.open('get', reqlink+"test", true);
+  xhr.open('get', reqlink+test, true);
   xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
   xhr.send();
